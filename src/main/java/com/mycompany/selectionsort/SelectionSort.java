@@ -12,6 +12,12 @@ package com.mycompany.selectionsort;
 public class SelectionSort {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       SelectionSortALG s = new SelectionSortALG();
+       s.addData("A");
+       s.addData("B");
+       s.addData("final test");
+       
+       s.sort();
+        System.out.println(s.toString());
     }
 }
