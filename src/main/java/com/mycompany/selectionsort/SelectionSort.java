@@ -1,23 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.selectionsort;
 
 /**
- *
+ * Main class for selection sort, creates two objects and tests selection sort on it 
  * @author nicka
  */
 public class SelectionSort {
 
     public static void main(String[] args) {
-       SelectionSortALG s = new SelectionSortALG();
+        
+       //selection sort on strings
+       SelectionSortALG<String> s = new SelectionSortALG();
+       s.addData("F");
        s.addData("A");
-       s.addData("B");
-       s.addData("final test");
+       s.addData("C");
        
        s.sort();
-        System.out.println(s.toString());
+       System.out.println(s.toString());
+        
+       //selection sort on integers
+       SelectionSortALG<Integer> s2 = new SelectionSortALG();
+       s2.addData(12);
+       s2.addData(2);
+       s2.addData(6);
+       
+       s2.sort();
+        System.out.println(s2.toString());
+        
+
+       
+       
+       
     }
 }
